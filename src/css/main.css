@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply font-publicSans;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+.bg-custom {
+  position: relative;
+  background: url("../imgs/bg-intro-desktop.svg") #fafafa no-repeat bottom right -260px;
+}
+
+
+
+.menu-mobile {
+  display: block;
+  border-top: 3px solid #2d314d;
+  width: 32px;
+}
+
+.ativo.menu-mobile {
+  border-top-color: transparent;
+}
+
+.ativo.menu-mobile:before {
+  transform: rotate(-135deg);
+}
+
+.ativo.menu-mobile:after {
+  transform: rotate(135deg);
+  top: -7px;
+}
+
+.menu-mobile:after,
+.menu-mobile:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: #2d314d;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  width: 80%;
+  /* max-width: 335px; */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 111;
+  text-align: center;
+  /* top: 100px; */
+  padding: 30px;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translate3d(0, -15px, 0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+[data-animate="fadeRight"] {
+  transform: translate3d(-15px, 0, 0);
+}
+
+[data-animate="fadeTop"] {
+  top: -15px !important;
+}
+
+
+.animaImg{
+  animation: animaImg 2s forwards;
+}
+
+@keyframes animaImg{
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: -100px;
+  }
+}
+
+
+
+
+
+@media (max-width: 1800px) {
+  .bg-custom {
+    position: relative;
+    background: url(/src/imgs/bg-intro-desktop.svg) #fafafa no-repeat bottom -50px
+      right -490px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bg-custom {
+    position: relative;
+    background: url("../imgs/bg-intro-desktop.svg") #fafafa no-repeat bottom
+      right -600px;
+  }
+
+  .imgCel {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg-custom {
+    background: url("../imgs/bg-intro-mobile.svg") #fafafa no-repeat;
+    background-size: cover;
+    background-position-y: -170px;
+  }
+  [data-animate="fadeRight"] {
+    transform: translate3d(0, -15px, 0);
+}
+
+@keyframes animaImg{
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+  .imgCel {
+    width: 100%;
+  }
+  .mobileMenu.ativo {
+    display: flex !important;
+    animation: animaMobile 0.5s forwards;
+  }
+  .bg-mobile::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #2d314d 2.33%, #2d314d54 30%);
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-custom {
+    background: url("../imgs/bg-intro-mobile.svg") #fafafa no-repeat right;
+    background-size: contain;
+    background-position-y: -60px;
+  }
+}
+
+@keyframes animaMobile {
+  0% {
+    opacity: 0;
+    top: -30px;
+  }
+  100% {
+    opacity: 1;
+    top: 100px;
+  }
+}
+
+
+
+
+[data-animate].--animated {
+  opacity: 1;
+  transform: none;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translate3d(0,-15px,0);
+  transition-property: opacity,transform;
+  transition-duration: .6s;
+  transition-timing-function: initial
+}
