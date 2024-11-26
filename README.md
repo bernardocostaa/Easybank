@@ -18,7 +18,7 @@
 Executar para clonar o projeto:
 
 ```bash
-git clone https://github.com/bernardocostaa/Myteam
+git clone https://github.com/bernardocostaa/Easybank
 ```
 
 Entrar na pasta usando cd e executar para instalar as dependências necessárias:
