@@ -52,7 +52,7 @@ Link do Projeto: [Easybank](https://easybankhs.netlify.app/)
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/Myteam/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/Easybank/blob/main/LICENSE) para mais detalhes.
 
 ---
 
