@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="" src="https://github.com/bernardocostaa/Myteam/blob/main/templete.jpg" width="100%">
+  <img alt="" src="https://github.com/bernardocostaa/Easybank/blob/main/templete.jpg" width="100%">
 </p>
 
 <p align="center">
