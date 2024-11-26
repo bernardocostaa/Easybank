@@ -1,5 +1,5 @@
 <h1 align="center">
- Myteam
+ Easybank
 </h1>
 
 <p align="center">
@@ -41,13 +41,13 @@ npm run build
 
 Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
-- React
+- JavaScript
 - HTML
-- CSS
+- Tailwind CSS
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Myteam](https://myteamjs.netlify.app/)
+Link do Projeto: [Easybank](https://myteamjs.netlify.app/)
 
 
 ## :memo: Licença
