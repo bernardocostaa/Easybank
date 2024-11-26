@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a target="_blank" href="https://myteamjs.netlify.app/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a target="_blank" href="https://easybankhs.netlify.app/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 <br>
@@ -47,7 +47,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Easybank](https://myteamjs.netlify.app/)
+Link do Projeto: [Easybank](https://easybankhs.netlify.app/)
 
 
 ## :memo: Licença
